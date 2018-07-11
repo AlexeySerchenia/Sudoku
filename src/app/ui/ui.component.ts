@@ -5,6 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './ui.component.html',
   styleUrls: ['./ui.component.css']
 })
-export class UIComponent {
+export class UIComponent  {
 title = "ui"
+elements = ["","","","","","","","","","","","","","",""];
+
 }
