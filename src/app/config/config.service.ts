@@ -1,9 +1,12 @@
 import { Injectable } from '@angular/core';
+import { HttpClient} from '@angular/common/http';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class ConfigService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  fetchdata() {
+  	return this.http.get('http://localhost:8080/values.json');
+  }
 }

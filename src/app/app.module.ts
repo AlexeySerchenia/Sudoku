@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-
+import { ConfigService} from './config/config.service';
 import { AppComponent } from './app.component';
 import { UIComponent } from './ui/ui.component';
 import { ConfigComponent } from './config/config.component';
@@ -16,7 +16,9 @@ import { ConfigComponent } from './config/config.component';
     BrowserModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    ConfigService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

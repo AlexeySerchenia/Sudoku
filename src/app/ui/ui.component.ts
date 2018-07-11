@@ -1,19 +1,28 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ConfigService } from '../config/config.service';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-@Injectable()
-export class ConfigService {
-  constructor(private http: HttpClient) { }
-}
 
 @Component({
   selector: 'app-ui',
   templateUrl: './ui.component.html',
   styleUrls: ['./ui.component.css']
 })
-export class UIComponent  {
+export class UIComponent implements OnInit  {
+
+	constructor(private configService : ConfigService) {}
+
+	ngOnInit() {
+		debugger;
+		this.configService.fetchdata()
+			.subscribe( res => {
+				debugger;
+			},err => {
+				debugger;
+			}
+			)
+	}
 title = "ui";
 elements = [
 ["11 ","21 ","31 ","41 ","51 ","61 ","71 ","81 ","91 "],
