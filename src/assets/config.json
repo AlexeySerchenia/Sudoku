@@ -1,4 +1,4 @@
 {
 	"dataUrl": "http://localhost:8080"
-	"textfile":
+	"textfile": "config.json"
 }
