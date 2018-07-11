@@ -7,6 +7,6 @@ export class ConfigService {
   constructor(private http: HttpClient) { }
 
   fetchdata() {
-  	return this.http.get('http://localhost:8080/values.json');
+  	return this.http.get('http://localhost:8080/values');
   }
 }
