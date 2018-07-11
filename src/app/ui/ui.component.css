@@ -1,0 +1,9 @@
+	.container{
+		display: grid;
+		border: 2px solid var(--black);
+		grid-template-columns: repeat(15, 25px);
+	}
+	.item{
+		border: 1px solid var(--yellow);
+		size: 10px 10px;
+	}
