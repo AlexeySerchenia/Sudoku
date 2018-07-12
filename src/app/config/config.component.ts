@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConfigComponent implements OnInit {
 
+/**  ненужный модуль
 showConfig() {
   this.configService.getConfig()
     .subscribe((data: Config) => this.config = {
@@ -14,7 +15,7 @@ showConfig() {
         textfile:  data['textfile']
     });
 }
-
+**/
   constructor() { }
 
   ngOnInit() {
